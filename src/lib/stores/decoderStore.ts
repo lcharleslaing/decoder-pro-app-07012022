@@ -1,3 +1,3 @@
 import { writable } from "svelte/store";
 
-const DecoderStore = writable({})
+export let dropStore = writable()

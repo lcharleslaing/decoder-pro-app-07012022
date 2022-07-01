@@ -1,8 +1,8 @@
 <script>
     import "../app.css";
-    import NavbarAuth0 from "../lib/components/NavbarAuth0.svelte";
-    import SveltekitAuth0 from "../lib/components/SveltekitAuth0.svelte";
-    import { user } from "../lib/auth/authStore";
+    import NavbarAuth0 from "$lib/components/NavbarAuth0.svelte";
+    import SveltekitAuth0 from "$lib/components/SveltekitAuth0.svelte";
+    import { user } from "$lib/auth/authStore";
 </script>
 
 <NavbarAuth0>
@@ -10,10 +10,10 @@
         hideBtnIcon={false}
         btn_login_text=""
         btn_logout_text=""
-        imgSrcLogin="/feather/log-in.svg"
-        imgSrcLogout="/feather/log-out.svg"
-        iconSize="w-8"
-        _class="m-2 btn btn-ghost text-slate-900"
+        imgSrcLogin="/feather/log-in-white.svg"
+        imgSrcLogout="/feather/log-out-white.svg"
+        iconSize="w-6"
+        _class="btn btn-ghost text-slate-900"
     />
 </NavbarAuth0>
 

@@ -1,0 +1,196 @@
+1:06:20 PM: Build ready to start
+1:06:21 PM: build-image version: 0e2f4c52031ab562db66aec633308326e3b108d0 (focal)
+1:06:21 PM: build-image tag: focal
+1:06:21 PM: buildbot version: 8dba8e08e1359f22ae92654e177dea552324c91c
+1:06:21 PM: Fetching cached dependencies
+1:06:22 PM: Failed to fetch cache, continuing with build
+1:06:22 PM: Starting to prepare the repo for build
+1:06:22 PM: No cached dependencies found. Cloning fresh repo
+1:06:22 PM: git clone https://github.com/lcharleslaing/decoder-pro-app-07012022
+1:06:22 PM: Preparing Git Reference refs/heads/master
+1:06:22 PM: Parsing package.json dependencies
+1:06:24 PM: Starting build script
+1:06:24 PM: Installing dependencies
+1:06:24 PM: Python version set to 2.7
+1:06:24 PM: v16.15.1 is already installed.
+1:06:25 PM: Now using node v16.15.1 (npm v8.11.0)
+1:06:25 PM: Started restoring cached build plugins
+1:06:25 PM: Finished restoring cached build plugins
+1:06:25 PM: Attempting ruby version 2.7.2, read from environment
+1:06:26 PM: Using ruby version 2.7.2
+1:06:26 PM: Using PHP version 8.0
+1:06:27 PM: No npm workspaces detected
+1:06:27 PM: Started restoring cached node modules
+1:06:27 PM: Finished restoring cached node modules
+1:06:27 PM: Installing NPM modules using NPM version 8.11.0
+1:06:27 PM: npm WARN config tmp This setting is no longer used.  npm stores temporary files in a special
+1:06:27 PM: npm WARN config location in the cache, and they are managed by
+1:06:27 PM: npm WARN config     [`cacache`](http://npm.im/cacache).
+1:06:28 PM: npm WARN config tmp This setting is no longer used.  npm stores temporary files in a special
+1:06:28 PM: npm WARN config location in the cache, and they are managed by
+1:06:28 PM: npm WARN config     [`cacache`](http://npm.im/cacache).
+1:06:44 PM: > sveltekitbase@0.0.1 prepare
+1:06:44 PM: > svelte-kit sync
+1:06:44 PM: added 218 packages, and audited 219 packages in 16s
+1:06:44 PM: 23 packages are looking for funding
+1:06:44 PM:   run `npm fund` for details
+1:06:44 PM: found 0 vulnerabilities
+1:06:44 PM: NPM modules installed
+1:06:44 PM: npm WARN config tmp This setting is no longer used.  npm stores temporary files in a special
+1:06:44 PM: npm WARN config location in the cache, and they are managed by
+1:06:44 PM: npm WARN config     [`cacache`](http://npm.im/cacache).
+1:06:44 PM: Started restoring cached go cache
+1:06:44 PM: Finished restoring cached go cache
+1:06:44 PM: Installing Go version 1.17 (requested 1.17)
+1:06:49 PM: unset GOOS;
+1:06:49 PM: unset GOARCH;
+1:06:49 PM: export GOROOT='/opt/buildhome/.gimme/versions/go1.17.linux.amd64';
+1:06:49 PM: export PATH="/opt/buildhome/.gimme/versions/go1.17.linux.amd64/bin:${PATH}";
+1:06:49 PM: go version >&2;
+1:06:49 PM: export GIMME_ENV="/opt/buildhome/.gimme/env/go1.17.linux.amd64.env"
+1:06:49 PM: go version go1.17 linux/amd64
+1:06:49 PM: Installing missing commands
+1:06:49 PM: Verify run directory
+1:06:51 PM: ​
+1:06:51 PM: ────────────────────────────────────────────────────────────────
+1:06:51 PM:   Netlify Build                                                 
+1:06:51 PM: ────────────────────────────────────────────────────────────────
+1:06:51 PM: ​
+1:06:51 PM: ❯ Version
+1:06:51 PM:   @netlify/build 27.3.1
+1:06:51 PM: ​
+1:06:51 PM: ❯ Flags
+1:06:51 PM:   baseRelDir: true
+1:06:51 PM:   buildId: 62bf298c2da60908b716be81
+1:06:51 PM:   deployId: 62bf298c2da60908b716be83
+1:06:51 PM: ​
+1:06:51 PM: ❯ Current directory
+1:06:51 PM:   /opt/build/repo
+1:06:51 PM: ​
+1:06:51 PM: ❯ Config file
+1:06:51 PM:   No config file was defined: using default values.
+1:06:51 PM: ​
+1:06:51 PM: ❯ Context
+1:06:51 PM:   production
+1:06:51 PM: ​
+1:06:51 PM: ────────────────────────────────────────────────────────────────
+1:06:51 PM:   1. Build command from Netlify app                             
+1:06:51 PM: ────────────────────────────────────────────────────────────────
+1:06:51 PM: ​
+1:06:51 PM: $ npm run build
+1:06:51 PM: npm WARN config tmp This setting is no longer used.  npm stores temporary files in a special
+1:06:51 PM: npm WARN config location in the cache, and they are managed by
+1:06:51 PM: npm WARN config     [`cacache`](http://npm.im/cacache).
+1:06:51 PM: > sveltekitbase@0.0.1 build
+1:06:51 PM: > svelte-kit build
+1:06:51 PM: vite v2.9.13 building for production...
+1:06:52 PM: transforming...
+1:06:53 PM: 🌼 daisyUI components 2.17.0  https://github.com/saadeghi/daisyui
+1:06:53 PM:   ✔︎ Including:  base, components, themes[29], utilities
+1:06:53 PM: 🌼 daisyUI components 2.17.0  https://github.com/saadeghi/daisyui
+1:06:53 PM:   ✔︎ Including:  base, components, themes[29], utilities
+1:06:54 PM: ✓ 25 modules transformed.
+1:06:54 PM: rendering chunks...
+1:06:55 PM:   Client build completed. Wrote 10 chunks and 2 assets
+1:06:55 PM:   Building server
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/manifest.json                               2.40 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/start-5f5d44cd.js                           23.34 KiB / gzip: 8.72 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/pages/about.svelte-edb4c761.js              0.54 KiB / gzip: 0.36 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/error.svelte-edad887d.js                    1.56 KiB / gzip: 0.75 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/pages/all-drops/index.svelte-3f10a955.js    1.89 KiB / gzip: 0.97 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/pages/contact.svelte-f3bd96e3.js            0.54 KiB / gzip: 0.35 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/pages/index.svelte-8de9840e.js              1.86 KiB / gzip: 0.80 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/pages/support.svelte-4ef5867f.js            0.54 KiB / gzip: 0.35 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/chunks/index-4a778093.js                    7.49 KiB / gzip: 3.04 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/chunks/singletons-7dd61538.js               0.48 KiB / gzip: 0.33 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/assets/pages/__layout.svelte-b59c5589.css   48.56 KiB / gzip: 8.59 KiB
+1:06:55 PM: .svelte-kit/output/client/_app/immutable/pages/__layout.svelte-b27bbe03.js           107.79 KiB / gzip: 37.30 KiB
+1:06:55 PM: vite v2.9.13 building SSR bundle for production...
+1:06:55 PM: svelte-paginate doesn't appear to be written in CJS, but also doesn't appear to be a valid ES module (i.e. it doesn't have "type": "module" or an .mjs extension for the entry point). Please contact the package author to fix.transforming...
+1:06:55 PM: ✓ 25 modules transformed.
+1:06:55 PM: Generated an empty chunk: "entries/endpoints/all-drops/index.ts"
+1:06:55 PM: Generated an empty chunk: "hooks"
+1:06:55 PM: rendering chunks...
+1:06:55 PM: .svelte-kit/output/server/manifest.json                             2.07 KiB
+1:06:55 PM: .svelte-kit/output/server/index.js                                  73.03 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/endpoints/all-drops/index.ts.js   0.00 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/pages/__layout.svelte.js          72.11 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/fallbacks/error.svelte.js         0.72 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/pages/about.svelte.js             0.28 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/pages/all-drops/index.svelte.js   1.02 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/pages/contact.svelte.js           0.29 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/pages/index.svelte.js             0.84 KiB
+1:06:55 PM: .svelte-kit/output/server/entries/pages/support.svelte.js           0.29 KiB
+1:06:55 PM: .svelte-kit/output/server/chunks/index-bd227567.js                  3.20 KiB
+1:06:55 PM: .svelte-kit/output/server/chunks/hooks-1c45ba0b.js                  0.00 KiB
+1:06:55 PM:   Prerendering
+1:06:55 PM: (node:1548) ExperimentalWarning: buffer.Blob is an experimental feature. This feature could change at any time
+1:06:55 PM: (Use `node --trace-warnings ...` to show where the warning was created)
+1:06:55 PM: Run npm run preview to preview your production build locally.
+1:06:55 PM: 
+1:06:55 PM: > Using @sveltejs/adapter-netlify
+1:06:55 PM:   Detected environment: Netlify. Using @sveltejs/adapter-netlify
+1:06:55 PM:   No netlify.toml found. Using default publish directory. Consult https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify#configuration for more details 
+1:06:55 PM:   Publishing to "build"
+1:06:55 PM:   Copying assets...
+1:06:55 PM:   Writing custom headers...
+1:06:56 PM:   Generating serverless functions...
+1:06:56 PM:   Writing redirects...
+1:06:56 PM:   ✔ done
+1:06:56 PM: ​
+1:06:56 PM: (build.command completed in 4.8s)
+1:06:56 PM: ​
+1:06:56 PM: ────────────────────────────────────────────────────────────────
+1:06:56 PM:   2. Functions bundling                                         
+1:06:56 PM: ────────────────────────────────────────────────────────────────
+1:06:56 PM: ​
+1:06:56 PM: Packaging Functions from .netlify/functions-internal directory:
+1:06:56 PM:  - render.js
+1:06:56 PM: ​
+1:06:56 PM: ​
+1:06:56 PM: ────────────────────────────────────────────────────────────────
+1:06:56 PM:   Dependencies installation error                               
+1:06:56 PM: ────────────────────────────────────────────────────────────────
+1:06:56 PM: ​
+1:06:56 PM:   Error message
+1:06:56 PM:   A Netlify Function failed to require one of its dependencies.
+1:06:56 PM:   Please make sure it is present in the site's top-level "package.json".​
+1:06:56 PM:   In file "/opt/build/repo/.netlify/functions-internal/render.js"
+1:06:56 PM:   Cannot find module './llhttp/llhttp_simd.wasm.js' from '/opt/build/repo/.netlify'
+1:06:56 PM: ​
+1:06:56 PM:   Resolved config
+1:06:56 PM:   build:
+1:06:56 PM:     command: npm run build
+1:06:56 PM:     commandOrigin: ui
+1:06:56 PM:     environment:
+1:06:56 PM:       - DATABASE_URL
+1:06:56 PM:       - VITE_AUTH0_CLIENT_ID
+1:06:56 PM:       - VITE_AUTH0_CLIENT_SECRET
+1:06:56 PM:       - VITE_AUTH0_DOMAIN
+1:06:56 PM:       - VITE_LOGIN_REDIRECT_URL
+1:06:56 PM:       - VITE_LOGOUT_REDIRECT_URL
+1:06:56 PM:     publish: /opt/build/repo/build
+1:06:56 PM:     publishOrigin: ui
+1:06:56 PM:   headers:
+1:06:57 PM:     - for: /_app/immutable/*      values:        cache-control: public, immutable, max-age=31536000  redirects:    - from: '*'      status: 200      to: /.netlify/functions/renderCaching artifacts
+1:06:57 PM: Started saving node modules
+1:06:57 PM: Finished saving node modules
+1:06:57 PM: Started saving build plugins
+1:06:57 PM: Finished saving build plugins
+1:06:58 PM: Creating deploy upload records
+1:06:57 PM: Started saving pip cache
+1:06:57 PM: Finished saving pip cache
+1:06:57 PM: Started saving emacs cask dependencies
+1:06:57 PM: Finished saving emacs cask dependencies
+1:06:57 PM: Started saving maven dependencies
+1:06:58 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+1:06:57 PM: Finished saving maven dependencies
+1:06:57 PM: Started saving boot dependencies
+1:06:57 PM: Finished saving boot dependencies
+1:06:57 PM: Started saving rust rustup cache
+1:06:57 PM: Finished saving rust rustup cache
+1:06:57 PM: Started saving go dependencies
+1:06:57 PM: Finished saving go dependencies
+1:06:58 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+1:06:58 PM: Failing build: Failed to build site
+1:06:58 PM: Finished processing build request in 37.093935541s

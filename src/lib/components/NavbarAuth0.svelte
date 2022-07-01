@@ -3,22 +3,12 @@
 
 <script>
     // @ts-nocheck
+    import { left_menu, right_menu } from "../utils/navbar";
     import { goto } from "$app/navigation";
     import { user, isAuthenticated } from "$lib/auth/authStore";
+
     export let leftIsClosed = true;
     export let rightIsClosed = true;
-
-    const left_menu = [
-        { name: "Home", url: "/" },
-        { name: "About US", url: "/about" },
-        { name: "Contact US", url: "/contact" },
-        { name: "Support US", url: "/support" },
-    ];
-
-    const right_menu = [
-        { name: "Something", url: "/" },
-        { name: "Something Else", url: "/" },
-    ];
 
     const closeDrawers = () => {
         leftIsClosed = true;
@@ -26,7 +16,9 @@
     };
 </script>
 
-<div class="navbar bg-base-100 sticky shadow">
+<div
+    class="flex place-items-center bg-site-color px-4 h-16 sticky shadow z-20 text-dark-text"
+>
     <div class="flex-none">
         <button
             on:click={() => {
@@ -50,34 +42,43 @@
         </button>
     </div>
     <div class="flex-1">
-        <a href="/" class="btn btn-ghost normal-case text-xl">
-            <span class="">
-                <img src="/big2tiny-logo.svg" alt="" class="w-12" />
-            </span>
-            <span class="mx-2 text-2xl">DeCoder-Pro</span>
+        <a
+            href="/"
+            class="btn btn-ghost normal-case text-xl mx-4 text-dark-text"
+        >
+            <span class="ml-2 font-bold">I</span>
+            <span class="ml-2 font-extrabold">AM</span>
+            <span class="font-bold">BIG2TINY</span>
         </a>
     </div>
 
     <slot />
-    {#if $isAuthenticated}
+    {#if $user}
         <div class="dropdown dropdown-end">
-            <label for="" tabindex="0" class="btn btn-ghost btn-circle avatar">
-                <div class="w-10 rounded-full">
-                    <img src={$user.picture} alt="profile" />
+            <label for="" tabindex="0" class="">
+                <div class="w-10 rounded-full mr-2">
+                    <img
+                        src={$user.picture}
+                        alt="profile"
+                        class="rounded-full"
+                    />
                 </div>
             </label>
-            <ul
-                tabindex="0"
-                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-                <li>
-                    <a href="/" class="justify-between">
-                        Profile
-                        <span class="badge">New</span>
-                    </a>
-                </li>
-                <li><a href="/">Settings</a></li>
-            </ul>
+            <!-- <ul
+				tabindex="0"
+				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-slate-900"
+			>
+				<li class="text-center underline underline-offset-2 uppercase">
+					{$user.nickname}
+				</li>
+				<li>
+					<a href="/" class="justify-between">
+						Profile
+						<span class="badge">New</span>
+					</a>
+				</li>
+				<li><a href="/">Settings</a></li>
+			</ul> -->
         </div>
     {/if}
     <div class="flex-none">
@@ -107,13 +108,13 @@
 <div
     on:click={closeDrawers}
     class:hidden={leftIsClosed}
-    class="fixed left-0 top-0 bg-gray-300 w-screen h-screen opacity-60 -z-10"
+    class="fixed left-0 top-0 bg-gray-300 w-screen h-screen opacity-60 z-10"
 />
 <div
     class:hidden={leftIsClosed}
-    class="fixed my-0 w-60 h-screen bg-white shadow mt-0.5 -z-0"
+    class="fixed left-0 my-0 w-60 h-screen bg-site-color  shadow mt-0.5 z-10 text-dark-text"
 >
-    <div class="text-center font-bold pt-4">Left Menu</div>
+    <div class="text-center font-bold pt-4">Menu</div>
     <ul class="ml-6">
         {#each left_menu as item}
             <li class="my-2">
@@ -124,20 +125,19 @@
                     }}
                     href={item.url}>{item.name}</a
                 >
-            </li>
-        {/each}
+            </li>{/each}
     </ul>
 </div>
 
 <div
     on:click={closeDrawers}
     class:hidden={rightIsClosed}
-    class="fixed left-0 top-0 bg-gray-300 w-screen h-screen opacity-60 -z-10"
+    class="fixed right-0 top-0 bg-gray-300 w-screen h-screen opacity-60 -z-10"
 />
 
 <div
     class:hidden={rightIsClosed}
-    class="fixed right-0 my-0 w-60 h-screen bg-white shadow mt-0.5 -z-0"
+    class="fixed right-0 my-0 w-60 h-screen  bg-site-color shadow mt-0.5 -z-0 text-dark-text"
 >
     <div class="text-center font-bold pt-4">Right Menu</div>
     <ul class="ml-6">
@@ -154,3 +154,9 @@
         {/each}
     </ul>
 </div>
+
+<style>
+    .big2tiny-logo {
+        @apply w-8 fill-current fill-dark-background;
+    }
+</style>
