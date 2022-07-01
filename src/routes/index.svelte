@@ -454,47 +454,53 @@
 </div>
 
 <div class="flex flex-row place-content-center text-white my-6 overflow-clip">
-    {#each drops as drop}
-        <div class:hidden={!isDecode}>
-            {#if isDecode && oneStepValue === drop.dropnumber}
-                <Results
-                    {telegram}
-                    title={decode}
-                    {drop}
-                    {dropDateFormated}
-                    {timeSince}
-                    {isDropImageVisible}
-                    dateDecoded={new Date()}
-                />
-            {/if}
+    {#if drops}
+        {#each drops as drop}
+            <div class:hidden={!isDecode}>
+                {#if isDecode && oneStepValue === drop.dropnumber}
+                    <Results
+                        {telegram}
+                        title={decode}
+                        {drop}
+                        {dropDateFormated}
+                        {timeSince}
+                        {isDropImageVisible}
+                        dateDecoded={new Date()}
+                    />
+                {/if}
+            </div>
+            <div class:hidden={!isLookup}>
+                {#if isLookup && lookup === drop.dropnumber}
+                    <Results
+                        {telegram}
+                        title={lookup}
+                        {drop}
+                        {dropDateFormated}
+                        {timeSince}
+                        {isDropImageVisible}
+                        dateDecoded={dropDateFormated(new Date().getTime())}
+                    />
+                {/if}
+            </div>
+            <div class:hidden={!isSearch} class="">
+                {#if isSearch && searchTerm == drop.dropnumber}
+                    <Results
+                        {telegram}
+                        title={searchTerm}
+                        {drop}
+                        {dropDateFormated}
+                        {timeSince}
+                        {isDropImageVisible}
+                        dateDecoded={dropDateFormated(new Date().getTime())}
+                    />
+                {/if}
+            </div>
+        {/each}
+    {:else}
+        <div class="text-center">
+            Current Nothing to Show. Please check back later.
         </div>
-        <div class:hidden={!isLookup}>
-            {#if isLookup && lookup === drop.dropnumber}
-                <Results
-                    {telegram}
-                    title={lookup}
-                    {drop}
-                    {dropDateFormated}
-                    {timeSince}
-                    {isDropImageVisible}
-                    dateDecoded={dropDateFormated(new Date().getTime())}
-                />
-            {/if}
-        </div>
-        <div class:hidden={!isSearch} class="">
-            {#if isSearch && searchTerm == drop.dropnumber}
-                <Results
-                    {telegram}
-                    title={searchTerm}
-                    {drop}
-                    {dropDateFormated}
-                    {timeSince}
-                    {isDropImageVisible}
-                    dateDecoded={dropDateFormated(new Date().getTime())}
-                />
-            {/if}
-        </div>
-    {/each}
+    {/if}
 </div>
 
 <style>

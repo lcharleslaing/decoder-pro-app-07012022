@@ -1,6 +1,5 @@
 import prisma from '../lib/utils/prisma'
-import { browser } from '$app/env';
-import { dropStore } from '$lib/stores/decoderStore';
+// import { dropStore } from '../lib/stores/decoderStore';
 
 export const get = async () => {
     const drops = await prisma.drop.findMany({
@@ -9,7 +8,7 @@ export const get = async () => {
         }
     })
     console.log(drops);
-    dropStore.set([drops])
+    // dropStore.set([drops])
 
     return {
         body: {
