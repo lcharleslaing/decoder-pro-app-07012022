@@ -2,3 +2,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    @apply bg-site-color;
+    margin-bottom: 100px;
+}
+
+.container {
+    @apply bg-dark-background;
+}
+
+.divider {
+    height: 2.5px;
+    background-color: #FDBA74;
+    width: 95vw;
+    margin-top: 10px;
+    border-radius: 100%
+}

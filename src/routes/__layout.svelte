@@ -19,4 +19,6 @@
 
 <!-- <pre>{JSON.stringify($user, null, 2)}</pre> -->
 
-<slot />
+<div class="m-0">
+    <slot />
+</div>
